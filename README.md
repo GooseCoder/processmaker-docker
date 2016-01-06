@@ -30,3 +30,11 @@ docker-compose build
 7) Build container
 
 docker-compose up
+
+The machine should be available in the following address
+
+http://localhost:8091
+
+mysql-host:localhost port:3306
+
+Internally the hostname for the mysql server is mapped as "mysql"

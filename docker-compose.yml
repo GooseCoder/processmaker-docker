@@ -1,0 +1,28 @@
+processmaker:
+  build: .
+  ports:
+    - "8091:80"
+    - "8092:8080"
+  expose:
+    - "9000"
+  volumes:
+    - processmaker:/opt/processmaker
+    - webgrind:/opt/webgrind
+  links:
+    - mysql:mysql
+    - memcached:memcached
+    - elasticsearch:elasticsearch
+mysql:
+  image: mysql:5.6.24
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: "sample"
+memcached:
+  image: memcached:latest
+elasticsearch:
+  image: elasticsearch:1.7.1
+  ports:
+    - "9100:9200"
+  expose:
+    - "9100"

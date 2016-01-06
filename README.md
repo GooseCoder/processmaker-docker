@@ -21,7 +21,7 @@ cd processmaker && composer install
 
 5) Execute the rake ruby command
 
-make
+rake
 
 6) Build container
 

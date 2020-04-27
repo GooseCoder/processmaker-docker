@@ -1,6 +1,7 @@
-# ProcessMaker docker development environment.
+# ProcessMaker 3.x docker development environment.
 
 ## Installation
+Please note that this repository only works with ProcessMaker 3.x previous versions and the new 4.x have different PHP version requirements.
 
 1) Install docker, the latest versions will do, please follow the instructions bellow for install instructions:
 
